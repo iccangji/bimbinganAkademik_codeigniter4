@@ -1,0 +1,995 @@
+ERROR - 2022-10-12 06:39:11 --> mysqli_sql_exception: Unknown column 'pa' in 'where clause' in C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bimbapp-beta\app\Controllers\Home.php(21): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\bimbapp-beta\app\Controllers\Home.php(32): App\Controllers\Home->data()
+#6 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bimbapp-beta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-10-12 06:39:11 --> Unknown column 'pa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `mhs`
+WHERE id-pa =(SELECT `id-pa` FROM `mhs` WHERE `nim` = \'D1A115015\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mhs`
+WHERE id-pa =(SELECT `id-pa` FROM `mhs` WHERE `nim` = \'D1A115015\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mhs`
+WHERE id-pa =(SELECT `id-pa` FROM `mhs` WHERE `nim` = \'D1A115015\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mhs`
+WHERE id-pa =(SELECT `id-pa` FROM `mhs` WHERE `nim` = \'D1A115015\')', [], false)
+ 5 APPPATH\Controllers\Home.php(21): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\Home.php(32): App\Controllers\Home->data()
+ 7 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 06:41:59 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\BaseConnection.php on line 1204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-12 06:42:59 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Config\BaseService.php on line 383.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-12 06:43:59 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-12 06:46:36 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-12 06:50:13 --> Undefined variable $nama
+in APPPATH\Views\index.php on line 34.
+ 1 APPPATH\Views\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'APPPATH\\Views\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(38): view('index')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 06:54:39 --> Undefined array key "list_dosen"
+in APPPATH\Controllers\Home.php on line 28.
+ 1 APPPATH\Controllers\Home.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "list_dosen"', 'APPPATH\\Controllers\\Home.php', 28)
+ 2 APPPATH\Controllers\Home.php(37): App\Controllers\Home->data()
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 06:55:48 --> Undefined variable $nama
+in APPPATH\Views\index.php on line 34.
+ 1 APPPATH\Views\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'APPPATH\\Views\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 06:56:02 --> Undefined variable $nama
+in APPPATH\Views\index.php on line 34.
+ 1 APPPATH\Views\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'APPPATH\\Views\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 06:56:43 --> Undefined variable $nama
+in APPPATH\Views\index.php on line 34.
+ 1 APPPATH\Views\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'APPPATH\\Views\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 06:57:57 --> Undefined variable $nama
+in APPPATH\Views\index.php on line 34.
+ 1 APPPATH\Views\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'APPPATH\\Views\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 06:58:53 --> Undefined variable $nama
+in APPPATH\Views\index.php on line 34.
+ 1 APPPATH\Views\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'APPPATH\\Views\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:00:08 --> Undefined variable $nama
+in APPPATH\Views\index.php on line 35.
+ 1 APPPATH\Views\index.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'APPPATH\\Views\\index.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:01:29 --> syntax error, unexpected token ",", expecting "]"
+in APPPATH\Controllers\Home.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:10:48 --> Attempt to read property "nama" on array
+in APPPATH\Views\index.php on line 38.
+ 1 APPPATH\Views\index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'APPPATH\\Views\\index.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:11:02 --> Array to string conversion
+in APPPATH\Views\index.php on line 38.
+ 1 APPPATH\Views\index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:13:40 --> Attempt to read property "nim" on array
+in APPPATH\Views\index.php on line 38.
+ 1 APPPATH\Views\index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nim" on array', 'APPPATH\\Views\\index.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:16:19 --> Undefined array key 0
+in APPPATH\Views\index.php on line 38.
+ 1 APPPATH\Views\index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\index.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:16:32 --> Undefined array key 0
+in APPPATH\Views\index.php on line 38.
+ 1 APPPATH\Views\index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\index.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:22:33 --> Undefined variable $mahasiswa
+in APPPATH\Views\index.php on line 37.
+ 1 APPPATH\Views\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mahasiswa', 'APPPATH\\Views\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:23:00 --> Cannot access offset of type string on string
+in APPPATH\Views\index.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:24:38 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\index.php on line 37.
+ 1 APPPATH\Views\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:24:48 --> Cannot access offset of type string on string
+in APPPATH\Views\index.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:26:50 --> Cannot access offset of type string on string
+in APPPATH\Views\index.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:27:08 --> Undefined array key 0
+in APPPATH\Views\index.php on line 38.
+ 1 APPPATH\Views\index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\index.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:36:23 --> Cannot access offset of type string on string
+in APPPATH\Views\index.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:36:38 --> Undefined variable $row
+in APPPATH\Views\index.php on line 39.
+ 1 APPPATH\Views\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:37:33 --> Cannot access offset of type string on string
+in APPPATH\Views\index.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:37:41 --> Cannot access offset of type string on string
+in APPPATH\Views\index.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:41:05 --> Undefined variable $nama
+in APPPATH\Views\index.php on line 39.
+ 1 APPPATH\Views\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'APPPATH\\Views\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:42:03 --> Uninitialized string offset 1
+in APPPATH\Views\index.php on line 39.
+ 1 APPPATH\Views\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 1', 'APPPATH\\Views\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:42:11 --> Cannot access offset of type string on string
+in APPPATH\Views\index.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:43:03 --> syntax error, unexpected token "}"
+in APPPATH\Views\index.php on line 40.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 07:43:36 --> Cannot access offset of type string on string
+in APPPATH\Views\index.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(45): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:09:09 --> Undefined variable $nama_dosen
+in APPPATH\Views\index.php on line 36.
+ 1 APPPATH\Views\index.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_dosen', 'APPPATH\\Views\\index.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:10:33 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 32.
+ 1 APPPATH\Controllers\Home.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 32)
+ 2 APPPATH\Controllers\Home.php(40): App\Controllers\Home->data()
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:11:53 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 43.
+ 1 APPPATH\Controllers\Home.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:12:10 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\index.php on line 51.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:14:40 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\index.php on line 51.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:15:12 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\index.php on line 51.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:15:14 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\index.php on line 51.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:15:26 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\index.php on line 51.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:15:42 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\index.php on line 51.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:17:21 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\index.php on line 51.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:17:42 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\index.php on line 51.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:17:50 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\index.php on line 51.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:18:12 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\index.php on line 51.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 08:20:48 --> Undefined variable $nip
+in APPPATH\Views\index.php on line 5.
+ 1 APPPATH\Views\index.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nip', 'APPPATH\\Views\\index.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(29): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-10-12 09:35:50 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'bimbapp-beta', 3306, '', 0)
+#1 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(332): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1275): CodeIgniter\Database\MySQLi\Connection->_escapeString('D1A115015')
+#4 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1247): CodeIgniter\Database\BaseConnection->escapeString('D1A115015')
+#5 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(323): CodeIgniter\Database\BaseConnection->escape('D1A115015')
+#6 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `id_pa`\n...', Array)
+#7 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#8 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#9 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT `id_pa`\n...')
+#10 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#11 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(748): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\MySQLi\Builder), true)
+#12 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(674): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', 'nip', Object(CodeIgniter\Database\MySQLi\Builder), 'AND ', true)
+#13 C:\xampp\htdocs\bimbapp-beta\app\Controllers\Home.php(18): CodeIgniter\Database\BaseBuilder->where('nip', Object(CodeIgniter\Database\MySQLi\Builder))
+#14 C:\xampp\htdocs\bimbapp-beta\app\Controllers\Home.php(41): App\Controllers\Home->data()
+#15 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Home->index()
+#16 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#17 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 C:\xampp\htdocs\bimbapp-beta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#19 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#20 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(332): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1275): CodeIgniter\Database\MySQLi\Connection->_escapeString('D1A115015')
+#3 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1247): CodeIgniter\Database\BaseConnection->escapeString('D1A115015')
+#4 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(323): CodeIgniter\Database\BaseConnection->escape('D1A115015')
+#5 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `id_pa`\n...', Array)
+#6 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#7 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#8 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT `id_pa`\n...')
+#9 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#10 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(748): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\MySQLi\Builder), true)
+#11 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(674): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', 'nip', Object(CodeIgniter\Database\MySQLi\Builder), 'AND ', true)
+#12 C:\xampp\htdocs\bimbapp-beta\app\Controllers\Home.php(18): CodeIgniter\Database\BaseBuilder->where('nip', Object(CodeIgniter\Database\MySQLi\Builder))
+#13 C:\xampp\htdocs\bimbapp-beta\app\Controllers\Home.php(41): App\Controllers\Home->data()
+#14 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Home->index()
+#15 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\xampp\htdocs\bimbapp-beta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#18 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#19 {main}
+CRITICAL - 2022-10-12 09:35:50 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(332): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1275): CodeIgniter\Database\MySQLi\Connection->_escapeString('D1A115015')
+ 3 SYSTEMPATH\Database\BaseConnection.php(1247): CodeIgniter\Database\BaseConnection->escapeString('D1A115015')
+ 4 SYSTEMPATH\Database\Query.php(323): CodeIgniter\Database\BaseConnection->escape('D1A115015')
+ 5 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `id_pa`
+FROM `mhs`
+WHERE `nim` = :nim:', [...])
+ 6 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 7 SYSTEMPATH\Database\BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+ 8 SYSTEMPATH\Database\BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT `id_pa`
+FROM `mhs`
+WHERE `nim` = :nim:')
+ 9 SYSTEMPATH\Database\BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+10 SYSTEMPATH\Database\BaseBuilder.php(748): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\MySQLi\Builder), true)
+11 SYSTEMPATH\Database\BaseBuilder.php(674): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', 'nip', Object(CodeIgniter\Database\MySQLi\Builder), 'AND ', true)
+12 APPPATH\Controllers\Home.php(18): CodeIgniter\Database\BaseBuilder->where('nip', Object(CodeIgniter\Database\MySQLi\Builder))
+13 APPPATH\Controllers\Home.php(41): App\Controllers\Home->data()
+14 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-10-12 09:36:13 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'bimbapp-beta', 3306, '', 0)
+#1 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(332): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1275): CodeIgniter\Database\MySQLi\Connection->_escapeString('D1A115015')
+#4 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1247): CodeIgniter\Database\BaseConnection->escapeString('D1A115015')
+#5 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(323): CodeIgniter\Database\BaseConnection->escape('D1A115015')
+#6 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `id_pa`\n...', Array)
+#7 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#8 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#9 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT `id_pa`\n...')
+#10 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#11 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(748): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\MySQLi\Builder), true)
+#12 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(674): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', 'nip', Object(CodeIgniter\Database\MySQLi\Builder), 'AND ', true)
+#13 C:\xampp\htdocs\bimbapp-beta\app\Controllers\Home.php(18): CodeIgniter\Database\BaseBuilder->where('nip', Object(CodeIgniter\Database\MySQLi\Builder))
+#14 C:\xampp\htdocs\bimbapp-beta\app\Controllers\Home.php(41): App\Controllers\Home->data()
+#15 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Home->index()
+#16 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#17 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 C:\xampp\htdocs\bimbapp-beta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#19 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#20 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(332): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1275): CodeIgniter\Database\MySQLi\Connection->_escapeString('D1A115015')
+#3 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1247): CodeIgniter\Database\BaseConnection->escapeString('D1A115015')
+#4 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(323): CodeIgniter\Database\BaseConnection->escape('D1A115015')
+#5 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `id_pa`\n...', Array)
+#6 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#7 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#8 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT `id_pa`\n...')
+#9 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#10 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(748): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\MySQLi\Builder), true)
+#11 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(674): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', 'nip', Object(CodeIgniter\Database\MySQLi\Builder), 'AND ', true)
+#12 C:\xampp\htdocs\bimbapp-beta\app\Controllers\Home.php(18): CodeIgniter\Database\BaseBuilder->where('nip', Object(CodeIgniter\Database\MySQLi\Builder))
+#13 C:\xampp\htdocs\bimbapp-beta\app\Controllers\Home.php(41): App\Controllers\Home->data()
+#14 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Home->index()
+#15 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\xampp\htdocs\bimbapp-beta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#18 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#19 {main}
+CRITICAL - 2022-10-12 09:36:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(332): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1275): CodeIgniter\Database\MySQLi\Connection->_escapeString('D1A115015')
+ 3 SYSTEMPATH\Database\BaseConnection.php(1247): CodeIgniter\Database\BaseConnection->escapeString('D1A115015')
+ 4 SYSTEMPATH\Database\Query.php(323): CodeIgniter\Database\BaseConnection->escape('D1A115015')
+ 5 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `id_pa`
+FROM `mhs`
+WHERE `nim` = :nim:', [...])
+ 6 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 7 SYSTEMPATH\Database\BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+ 8 SYSTEMPATH\Database\BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT `id_pa`
+FROM `mhs`
+WHERE `nim` = :nim:')
+ 9 SYSTEMPATH\Database\BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+10 SYSTEMPATH\Database\BaseBuilder.php(748): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\MySQLi\Builder), true)
+11 SYSTEMPATH\Database\BaseBuilder.php(674): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', 'nip', Object(CodeIgniter\Database\MySQLi\Builder), 'AND ', true)
+12 APPPATH\Controllers\Home.php(18): CodeIgniter\Database\BaseBuilder->where('nip', Object(CodeIgniter\Database\MySQLi\Builder))
+13 APPPATH\Controllers\Home.php(41): App\Controllers\Home->data()
+14 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:39:50 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH\Views\index.php on line 23.
+ 1 APPPATH\Views\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'APPPATH\\Views\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(30): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:40:10 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH\Views\index.php on line 23.
+ 1 APPPATH\Views\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'APPPATH\\Views\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(30): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:43:55 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH\Views\index.php on line 18.
+ 1 APPPATH\Views\index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'APPPATH\\Views\\index.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(30): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:44:53 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH\Views\index.php on line 20.
+ 1 APPPATH\Views\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'APPPATH\\Views\\index.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(30): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:46:49 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\Pages.php on line 17.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Pages.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pages')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pages')
+ 4 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Pages', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:49:11 --> Undefined property: CodeIgniter\Database\MySQLi\Builder::$get
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 APPPATH\Controllers\Pages.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Builder::$get', 'APPPATH\\Controllers\\Pages.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:49:20 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_Rows()
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:51:51 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Pages.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pages')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pages')
+ 4 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Pages', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:53:34 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH\Views\index.php on line 20.
+ 1 APPPATH\Views\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'APPPATH\\Views\\index.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(30): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:55:02 --> Undefined variable $count_dosen
+in APPPATH\Views\index.php on line 23.
+ 1 APPPATH\Views\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_dosen', 'APPPATH\\Views\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(30): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:55:26 --> Undefined variable $count_dosen
+in APPPATH\Views\index.php on line 23.
+ 1 APPPATH\Views\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_dosen', 'APPPATH\\Views\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(30): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:55:36 --> Undefined variable $count_dosen
+in APPPATH\Views\index.php on line 23.
+ 1 APPPATH\Views\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_dosen', 'APPPATH\\Views\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(30): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:55:55 --> Undefined variable $count_dosen
+in APPPATH\Views\index.php on line 23.
+ 1 APPPATH\Views\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_dosen', 'APPPATH\\Views\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(30): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197501092014091001')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 09:58:33 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH\Views\index.php on line 23.
+ 1 APPPATH\Views\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'APPPATH\\Views\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(48): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 10:03:51 --> Undefined variable $count_dosen
+in APPPATH\Views\index.php on line 23.
+ 1 APPPATH\Views\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_dosen', 'APPPATH\\Views\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(48): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 10:04:17 --> Cannot use object of type mysqli as array
+in APPPATH\Views\index.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(48): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 10:12:15 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\index.php on line 23.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Pages.php(30): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->dosen('197508142006041001')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 10:56:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Controllers\Home.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->search()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 11:10:20 --> Undefined variable $mhs
+in APPPATH\Controllers\Home.php on line 63.
+ 1 APPPATH\Controllers\Home.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mhs', 'APPPATH\\Controllers\\Home.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->search()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 11:13:30 --> Cannot use [] for reading
+in APPPATH\Controllers\Home.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->search()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 11:22:43 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Home.php on line 68.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('home/search')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('home/search')
+ 3 SYSTEMPATH\CodeIgniter.php(777): CodeIgniter\Router\Router->handle('home/search')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-10-12 11:25:57 --> mysqli_sql_exception: Unknown column 'mhs' in 'where clause' in C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nip`, `...', 0)
+#1 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nip`, `...')
+#2 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nip`, `...')
+#3 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nip`, `...', Array, false)
+#4 C:\xampp\htdocs\bimbapp-beta\app\Controllers\Home.php(65): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Home->search()
+#6 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bimbapp-beta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bimbapp-beta\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-10-12 11:25:57 --> Unknown column 'mhs' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nip`, `nama`
+FROM `dosen`
+WHERE nip =(SELECT `id_pa` FROM `mhs` WHERE `nim` = \'D1A115015\')
+AND  `mhs` LIKE \'%al%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nip`, `nama`
+FROM `dosen`
+WHERE nip =(SELECT `id_pa` FROM `mhs` WHERE `nim` = \'D1A115015\')
+AND  `mhs` LIKE \'%al%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nip`, `nama`
+FROM `dosen`
+WHERE nip =(SELECT `id_pa` FROM `mhs` WHERE `nim` = \'D1A115015\')
+AND  `mhs` LIKE \'%al%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nip`, `nama`
+FROM `dosen`
+WHERE nip =(SELECT `id_pa` FROM `mhs` WHERE `nim` = \'D1A115015\')
+AND  `mhs` LIKE :mhs: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Controllers\Home.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->search()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 11:26:33 --> Undefined variable $tbl2
+in APPPATH\Controllers\Home.php on line 65.
+ 1 APPPATH\Controllers\Home.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tbl2', 'APPPATH\\Controllers\\Home.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->search()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 11:47:40 --> Call to undefined function App\Controllers\getWhere()
+in APPPATH\Controllers\Home.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->search()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 11:53:02 --> Undefined variable $tbl
+in APPPATH\Controllers\Home.php on line 65.
+ 1 APPPATH\Controllers\Home.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tbl', 'APPPATH\\Controllers\\Home.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->search()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 12:15:55 --> Undefined variable $tbl2
+in APPPATH\Controllers\Home.php on line 66.
+ 1 APPPATH\Controllers\Home.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tbl2', 'APPPATH\\Controllers\\Home.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->search()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 12:24:24 --> syntax error, unexpected token "{", expecting "("
+in APPPATH\Controllers\Pages.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Pages.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pages')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pages')
+ 4 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Pages', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 12:28:25 --> syntax error, unexpected token "{", expecting "("
+in APPPATH\Controllers\Pages.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Pages.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pages')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pages')
+ 4 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Pages', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 12:53:08 --> Call to undefined method App\Controllers\Pages::data()
+in APPPATH\Controllers\Pages.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->search()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 12:53:29 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Pages.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->search()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

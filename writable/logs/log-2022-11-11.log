@@ -1,0 +1,1636 @@
+CRITICAL - 2022-11-11 01:20:38 --> Undefined variable: nama_dosen
+in APPPATH/Views/index.php on line 40.
+ 1 APPPATH/Views/index.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Chat.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 01:38:07 --> Undefined variable: data
+in APPPATH/Views/list_chat.php on line 16.
+ 1 APPPATH/Views/list_chat.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/list_chat.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Chat.php(35): view()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 01:40:42 --> sizeof(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/list_chat.php on line 12.
+ 1 APPPATH/Views/list_chat.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/list_chat.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Chat.php(35): view()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 01:44:43 --> Array to string conversion
+in APPPATH/Views/list_chat.php on line 15.
+ 1 APPPATH/Views/list_chat.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/list_chat.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Chat.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 02:11:03 --> max(): When only one parameter is given, it must be an array
+in APPPATH/Controllers/Chat.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Chat.php(23): max()
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:11:31 --> mysqli_sql_exception: Operand should contain 1 column(s) in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:11:31 --> Operand should contain 1 column(s)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:19:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE 197508142006041001IN (receiver, sender)          ' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:19:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE 197508142006041001IN (receiver, sender)          ' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:19:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE 197508142006041001 IN (receiver, sender)         ' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:19:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE 197508142006041001 IN (receiver, sender)         ' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:20:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE 197508142006041001 IN (receiver, sender)         ' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:20:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE 197508142006041001 IN (receiver, sender)         ' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:22:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE 197508142006041001 IN (receiver, sender) FROM `cha' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:22:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE 197508142006041001 IN (receiver, sender) FROM `cha' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:22:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE '197508142006041001' IN (receiver, sender) FROM `c' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:22:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE '197508142006041001' IN (receiver, sender) FROM `c' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 02:27:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH/Controllers/Chat.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:27:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE '197508142006041001' IN (receiver, sender) FROM `c' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:27:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM chat              WHERE '197508142006041001' IN (receiver, sender) FROM `c' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:27:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE '197508142006041001' IN (receiver, sender) FROM `chat`) `chat` FROM `chat`' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:27:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE '197508142006041001' IN (receiver, sender) FROM `chat`) `chat` FROM `chat`' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:28:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT CASE WHEN sender  = 197508142006041001 THEN receiver ELSE sender' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:28:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT CASE WHEN sender  = 197508142006041001 THEN receiver ELSE sender' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:28:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT CASE WHEN sender  = 197508142006041001 THEN receiver ELSE sender' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:28:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT CASE WHEN sender  = 197508142006041001 THEN receiver ELSE sender' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:29:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT CASE WHEN sender  = '197508142006041001' THEN receiver ELSE send' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:29:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT CASE WHEN sender  = '197508142006041001' THEN receiver ELSE send' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:29:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT CASE WHEN sender  = "197508142006041001" THEN receiver ELSE send' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:29:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT CASE WHEN sender  = "197508142006041001" THEN receiver ELSE send' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:31:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT CASE WHEN sender THEN receiver ELSE sender END id             F' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:31:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT CASE WHEN sender THEN receiver ELSE sender END id             F' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:32:01 --> mysqli_sql_exception: Reference 'CHAT' not supported (forward reference in item list) in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:32:01 --> Reference 'CHAT' not supported (forward reference in item list)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:32:06 --> mysqli_sql_exception: Reference 'chat' not supported (forward reference in item list) in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:32:06 --> Reference 'chat' not supported (forward reference in item list)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:32:17 --> mysqli_sql_exception: Reference 'chat' not supported (forward reference in item list) in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:32:17 --> Reference 'chat' not supported (forward reference in item list)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:32:19 --> mysqli_sql_exception: Reference 'chat' not supported (forward reference in item list) in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:32:19 --> Reference 'chat' not supported (forward reference in item list)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:32:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `chat`) `chat` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:32:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `chat`) `chat` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:33:16 --> mysqli_sql_exception: Reference 'chat' not supported (forward reference in item list) in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:33:16 --> Reference 'chat' not supported (forward reference in item list)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:33:21 --> mysqli_sql_exception: Unknown column 'SELECT' in 'field list' in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:33:21 --> Unknown column 'SELECT' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:33:25 --> mysqli_sql_exception: Unknown column 'SELECT' in 'field list' in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:33:25 --> Unknown column 'SELECT' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:33:30 --> mysqli_sql_exception: Unknown column 'SELECT' in 'field list' in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:33:30 --> Unknown column 'SELECT' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:33:36 --> mysqli_sql_exception: Reference 'chat' not supported (forward reference in item list) in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:33:36 --> Reference 'chat' not supported (forward reference in item list)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:34:07 --> mysqli_sql_exception: Unknown column 'SELECT chat.sender from' in 'field list' in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:34:07 --> Unknown column 'SELECT chat.sender from' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:34:18 --> mysqli_sql_exception: Unknown column 'SELECT sender from' in 'field list' in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:34:18 --> Unknown column 'SELECT sender from' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:34:26 --> mysqli_sql_exception: Reference 'chat' not supported (forward reference in item list) in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:34:26 --> Reference 'chat' not supported (forward reference in item list)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:35:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT sender from FROM `chat`) `chat` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:35:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT sender from FROM `chat`) `chat` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:35:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT sender from chat FROM `chat`) `chat` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:35:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT sender from chat FROM `chat`) `chat` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:35:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT sender FROM `chat`) `chat` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:35:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT sender FROM `chat`) `chat` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 02:35:51 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::selectSubquery(), 1 passed in /var/www/html/bimbapp-beta/app/Controllers/Chat.php on line 26 and exactly 2 expected
+in SYSTEMPATH/Database/BaseBuilder.php on line 464.
+ 1 APPPATH/Controllers/Chat.php(26): CodeIgniter\Database\BaseBuilder->selectSubquery()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:35:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT sender FROM `chat`) `chat` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:35:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT sender FROM `chat`) `chat` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:36:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT sender FROM `chat`) `alias` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:36:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT sender FROM `chat`) `alias` FROM `chat`)
+ORDER BY `send_at` DESC' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:38:37 --> mysqli_sql_exception: Unknown column 'send_at' in 'IN/ALL/ANY subquery' in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:38:37 --> Unknown column 'send_at' in 'IN/ALL/ANY subquery'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:42:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT  GROUP_CONCAT(DISTINCT
+            CASE WHEN sender = 197508142006041001' at line 1 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:42:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT  GROUP_CONCAT(DISTINCT
+            CASE WHEN sender = 197508142006041001' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:45:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT 
+                CASE WHEN sender = 197508142006041001 
+      ' at line 1 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:45:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT 
+                CASE WHEN sender = 197508142006041001 
+      ' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:45:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT 
+                CASE WHEN sender = '197508142006041001'
+     ' at line 1 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:45:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT 
+                CASE WHEN sender = '197508142006041001'
+     ' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:45:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT 
+                CASE WHEN chat.sender = '197508142006041001'
+' at line 1 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:45:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT 
+                CASE WHEN chat.sender = '197508142006041001'
+' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:46:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT 
+                CASE WHEN chat.sender = 197508142006041001
+  ' at line 1 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:46:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT 
+                CASE WHEN chat.sender = 197508142006041001
+  ' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 02:47:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH/Controllers/Chat.php on line 31.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 02:49:46 --> Function name must be a string
+in APPPATH/Controllers/Chat.php on line 31.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:50:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CASE WHEN chat.sender = 197508142006041001
+                THEN chat.receiver E' at line 2 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(24): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 02:50:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CASE WHEN chat.sender = 197508142006041001
+                THEN chat.receiver E' at line 2
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(24): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:52:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CASE WHEN chat.sender = 197508142006041001
+                THEN chat.receiver E' at line 2 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(24): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 02:52:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CASE WHEN chat.sender = 197508142006041001
+                THEN chat.receiver E' at line 2
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(24): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 02:54:03 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::fromSubquery() must be an instance of CodeIgniter\Database\BaseBuilder, instance of CodeIgniter\Database\MySQLi\Result given, called in /var/www/html/bimbapp-beta/app/Controllers/Chat.php on line 31
+in SYSTEMPATH/Database/BaseBuilder.php on line 576.
+ 1 APPPATH/Controllers/Chat.php(31): CodeIgniter\Database\BaseBuilder->fromSubquery()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 02:56:36 --> Function name must be a string
+in APPPATH/Controllers/Chat.php on line 31.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 02:56:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT                 CASE WHEN chat.sender = 197508142006041001    ' at line 2 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#10 {main}
+CRITICAL - 2022-11-11 02:56:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT                 CASE WHEN chat.sender = 197508142006041001    ' at line 2
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Chat.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 02:58:52 --> trim() expects parameter 1 to be string, array given
+in SYSTEMPATH/Database/BaseBuilder.php on line 1362.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1362): trim()
+ 3 APPPATH/Controllers/Chat.php(30): CodeIgniter\Database\BaseBuilder->groupBy()
+ 4 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:01:58 --> mysqli_sql_exception: Unknown column 'sender_id' in 'where clause' in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(30): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:01:58 --> Unknown column 'sender_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(30): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:03:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP_CONCAT( DISTINCT (
+                if( receiver = '197508142006041001', s' at line 1 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(30): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:03:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP_CONCAT( DISTINCT (
+                if( receiver = '197508142006041001', s' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(30): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:03:30 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'bimbapp-beta.chat.text'; this is incompatible with sql_mode=only_full_group_by in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(30): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:03:30 --> In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'bimbapp-beta.chat.text'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(30): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:11:27 --> mysqli_sql_exception: Every derived table must have its own alias in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:11:27 --> Every derived table must have its own alias
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:11:39 --> mysqli_sql_exception: Every derived table must have its own alias in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:11:39 --> Every derived table must have its own alias
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:11:46 --> mysqli_sql_exception: Every derived table must have its own alias in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:11:46 --> Every derived table must have its own alias
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:11:58 --> mysqli_sql_exception: Every derived table must have its own alias in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:11:58 --> Every derived table must have its own alias
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:14:18 --> mysqli_sql_exception: Every derived table must have its own alias in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:14:18 --> Every derived table must have its own alias
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:14:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 11 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:14:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 11
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:16:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 11 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:16:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 11
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:18:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'T2' at line 11 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:18:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'T2' at line 11
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:19:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AS T2' at line 8 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:19:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AS T2' at line 8
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:19:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 8 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:19:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 8
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:19:21 --> mysqli_sql_exception: Every derived table must have its own alias in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:19:21 --> Every derived table must have its own alias
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:19:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 8 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:19:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 8
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:20:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS T2' at line 8 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:20:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS T2' at line 8
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:20:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS T2)' at line 8 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:20:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS T2)' at line 8
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:20:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS T2' at line 8 in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:20:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS T2' at line 8
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 03:21:12 --> mysqli_sql_exception: Subquery returns more than 1 row in /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/bimbapp-beta/app/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(902): App\Controllers\Chat->index()
+#5 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/bimbapp-beta/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/bimbapp-beta/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/var/www/html/b...')
+#9 {main}
+CRITICAL - 2022-11-11 03:21:12 --> Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Chat.php(23): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 03:21:46 --> Undefined index: sender
+in APPPATH/Controllers/Chat.php on line 39.
+ 1 APPPATH/Controllers/Chat.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 03:23:13 --> Undefined index: sender
+in APPPATH/Controllers/Chat.php on line 38.
+ 1 APPPATH/Controllers/Chat.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 03:23:22 --> Undefined index: sender
+in APPPATH/Controllers/Chat.php on line 38.
+ 1 APPPATH/Controllers/Chat.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 03:23:36 --> Undefined index: sender
+in APPPATH/Controllers/Chat.php on line 38.
+ 1 APPPATH/Controllers/Chat.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 03:23:42 --> Undefined index: sender
+in APPPATH/Controllers/Chat.php on line 38.
+ 1 APPPATH/Controllers/Chat.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 03:23:48 --> Undefined index: sender
+in APPPATH/Controllers/Chat.php on line 38.
+ 1 APPPATH/Controllers/Chat.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 03:24:42 --> Undefined offset: 0
+in APPPATH/Controllers/Chat.php on line 40.
+ 1 APPPATH/Controllers/Chat.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Chat->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
