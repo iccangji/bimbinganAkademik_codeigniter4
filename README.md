@@ -1,0 +1,2 @@
+# bimbinganAkademik_codeigniter4
+Aplikasi Bimbingan Akademik Mahasiswa menggunakan CodeIngiter4
